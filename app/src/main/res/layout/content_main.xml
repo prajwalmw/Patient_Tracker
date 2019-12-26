@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.azharwahidkhan.Patient_Tracker.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:orientation="vertical"
+    android:background="#C6FF00">
+
+    <TextView
+        android:id="@+id/md"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Dr. Sarthak"
+        android:textStyle="bold"
+        android:paddingVertical="100dp"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:background="#000000"
+        android:textColor="#18FFFF"
+
+      />
+
+    <TextView
+        android:id="@+id/dentist"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Dr. Aparna"
+        android:textStyle="bold"
+        android:textSize="30dp"
+android:background="#000000"
+        android:paddingVertical="100dp"
+        android:textAlignment="center"
+        android:textColor="#18FFFF"
+        />
+
+
+
+</LinearLayout>

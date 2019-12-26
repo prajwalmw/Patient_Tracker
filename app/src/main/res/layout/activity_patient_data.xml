@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.azharwahidkhan.Patient_Tracker.Patient_data"
+    android:orientation="vertical"
+    >
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        >
+
+
+        <TextView
+            android:id="@+id/id_data"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#bababa"
+            android:textStyle="bold"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="50dp"/>
+
+        <TextView
+            android:id="@+id/name"
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/id_data"
+            android:layout_marginTop="28dp"
+            android:paddingVertical="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Name :"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/name_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/name"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@+id/name"
+            android:layout_toRightOf="@+id/name"
+            android:paddingVertical="20dp"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name"
+            android:layout_alignStart="@+id/name"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="41dp"
+            android:text="address :"
+            android:textStyle="bold"
+            android:paddingVertical="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            style="?android:listSeparatorTextViewStyle"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/address_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/name_data"
+            android:layout_alignRight="@+id/name_data"
+            android:layout_alignTop="@+id/address"
+            android:paddingVertical="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+             />
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/address"
+            android:layout_alignStart="@+id/address"
+            android:layout_below="@+id/address"
+            android:layout_marginTop="34dp"
+            android:text="gender :"
+            android:textStyle="bold"
+            android:paddingVertical="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            style="?android:listSeparatorTextViewStyle"/>
+
+        <TextView
+            android:id="@+id/gender_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/address_data"
+            android:layout_alignRight="@+id/address_data"
+            android:layout_alignTop="@+id/gender"
+            android:paddingVertical="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+           />
+
+        <TextView
+            android:id="@+id/contact"
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/gender"
+            android:layout_alignStart="@+id/gender"
+            android:layout_below="@+id/gender"
+            android:layout_marginTop="37dp"
+            android:text="contact :"
+            android:paddingVertical="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/contact_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/contact"
+            android:layout_alignLeft="@+id/gender_data"
+            android:layout_alignStart="@+id/gender_data"
+            android:paddingVertical="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+             />
+
+        <TextView
+            android:id="@+id/symptom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/contact"
+            android:layout_alignStart="@+id/contact"
+            android:layout_below="@+id/contact"
+            android:layout_marginTop="36dp"
+            android:text="symptoms :"
+            android:textStyle="bold"
+            android:paddingVertical="20dp"
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/symptom_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/contact_data"
+            android:layout_alignStart="@+id/contact_data"
+            android:layout_alignTop="@+id/symptom"
+            android:paddingVertical="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+           />
+
+        <TextView
+            android:id="@+id/medicine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/symptom"
+            android:layout_alignStart="@+id/symptom"
+            android:layout_below="@+id/symptom"
+            android:layout_marginTop="41dp"
+            android:text="medicine :"
+            android:paddingVertical="20dp"
+            android:textStyle="bold"
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/medicine_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/symptom_data"
+            android:layout_alignStart="@+id/symptom_data"
+            android:layout_alignTop="@+id/medicine"
+            android:paddingVertical="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/medicine"
+            android:layout_alignStart="@+id/medicine"
+            android:layout_below="@+id/medicine"
+            android:layout_marginTop="34dp"
+            android:text="cost :"
+            android:paddingVertical="20dp"
+            android:textStyle="bold"
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/cost_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cost"
+            android:layout_alignLeft="@+id/medicine_data"
+            android:layout_alignStart="@+id/medicine_data"
+            android:paddingVertical="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+           />
+
+        <TextView
+            android:id="@+id/back_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cost"
+            android:layout_alignStart="@+id/cost"
+            android:layout_below="@+id/cost"
+            android:layout_marginTop="41dp"
+            android:text="Backpain :"
+            android:paddingVertical="20dp"
+            android:textStyle="bold"
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/back_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cost_data"
+            android:layout_alignStart="@+id/cost_data"
+            android:layout_alignTop="@+id/cost_data"
+            android:paddingVertical="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/chest_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/back_edit"
+            android:layout_alignStart="@+id/back_edit"
+            android:layout_below="@+id/back_edit"
+            android:layout_marginTop="41dp"
+            android:text="Chestpain :"
+            android:paddingVertical="20dp"
+            android:textStyle="bold"
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/chest_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/back_data"
+            android:layout_alignStart="@+id/back_data"
+            android:layout_alignTop="@+id/back_data"
+            android:paddingVertical="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/stomach_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/chest_edit"
+            android:layout_alignStart="@+id/chest_edit"
+            android:layout_below="@+id/chest_edit"
+            android:layout_marginTop="41dp"
+            android:text="Stomachpain :"
+            android:paddingVertical="20dp"
+            android:textStyle="bold"
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/stomach_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/chest_data"
+            android:layout_alignStart="@+id/chest_data"
+            android:layout_alignTop="@+id/chest_data"
+            android:paddingVertical="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            />
+
+
+
+
+    </TableLayout>
+</ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="31dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:backgroundTint="#D81B60"
+        android:tint="#FFFFFF"
+        app:fabSize="normal"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+
+</RelativeLayout>

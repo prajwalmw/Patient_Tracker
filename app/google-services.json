@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "716415062721",
+    "firebase_url": "https://patienttracker-efbc8.firebaseio.com",
+    "project_id": "patienttracker-efbc8",
+    "storage_bucket": "patienttracker-efbc8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716415062721:android:aa84bc407f2592fc",
+        "android_client_info": {
+          "package_name": "com.example.azharwahidkhan.arshad_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716415062721-18j9qin6kom0iu3i3s4cetk1upjmhmru.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.azharwahidkhan.arshad_app",
+            "certificate_hash": "ce611e2ed056a53cb27bbd7c7ef689774b18a246"
+          }
+        },
+        {
+          "client_id": "716415062721-1q4huqv7nmsepqleu3h0104ekpgjmh8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAO3UP9heko2h3_0rxABEJ4L2b64KFRYI4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716415062721-1q4huqv7nmsepqleu3h0104ekpgjmh8s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

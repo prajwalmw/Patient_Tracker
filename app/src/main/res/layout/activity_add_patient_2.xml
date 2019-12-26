@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:layout_marginTop="-200dp"
+    android:layout_height="match_parent">
+
+
+
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.azharwahidkhan.Patient_Tracker.Add_patient"
+        android:background="#18FFFF">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:cardBackgroundColor="#212121"
+            android:layout_margin="3dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="485dp">
+
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#616161"
+                    android:text="Personal Details"
+                    android:paddingVertical="5dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#C6FF00"
+                    android:paddingTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView5"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="27dp"
+                    android:textColor="#C6FF00"
+                    android:text="Name :- "
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView8"
+                    android:layout_alignBottom="@+id/textView8"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_toEndOf="@+id/textView9"
+                    android:layout_toRightOf="@+id/textView9"
+                    android:ems="10"
+                    android:inputType="textCapWords"
+                    android:textColor="#18FFFF"
+                    />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView8"
+                    android:layout_alignStart="@+id/textView8"
+                    android:layout_below="@+id/editText"
+                    android:layout_marginTop="20dp"
+                    android:text="Address :- "
+                    android:textSize="20dp"
+                    android:textColor="#C6FF00"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView9"
+                    android:layout_alignBottom="@+id/textView9"
+                    android:layout_alignLeft="@+id/editText"
+                    android:layout_alignStart="@+id/editText"
+                    android:ems="10"
+                    android:inputType="textPostalAddress|textCapWords"
+                    android:textColor="#18FFFF" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/radiogroup"
+                    android:layout_alignLeft="@+id/textView9"
+                    android:layout_alignStart="@+id/textView9"
+                    android:layout_marginBottom="18dp"
+                    android:text="Gender :- "
+                    android:textColor="#C6FF00"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <RadioGroup
+
+                    android:id="@+id/radiogroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/editText3"
+                    android:layout_alignStart="@+id/editText3"
+                    android:layout_below="@+id/editText2"
+                    android:checkedButton="@+id/male"
+                    android:orientation="horizontal"
+                    android:paddingVertical="20dp">
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Male"
+                        android:textColor="#C6FF00" />
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Female"
+                        android:textColor="#C6FF00" />
+
+                </RadioGroup>
+
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView10"
+                    android:layout_alignStart="@+id/textView10"
+                    android:layout_below="@+id/radiogroup"
+                    android:layout_marginTop="22dp"
+                    android:text="Contact :- "
+                    android:textColor="#C6FF00"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView11"
+                    android:layout_alignBottom="@+id/textView11"
+                    android:layout_alignLeft="@+id/editText2"
+                    android:layout_alignStart="@+id/editText2"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:textColor="#18FFFF" />
+
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/card1"
+            android:layout_margin="3dp"
+            app:cardBackgroundColor="#212121"
+            android:layout_marginBottom="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/med_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#616161"
+                    android:text="Medical Details"
+                    android:textAlignment="center"
+                    android:paddingTop="5dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#C6FF00"/>
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/med_title"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_centerVertical="true"
+                    android:text="Symptoms :-  "
+                    android:textColor="#C6FF00"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_centerVertical="true"
+                    android:text="Medicines :- "
+                    android:textColor="#C6FF00"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="78dp"
+                    android:layout_marginStart="49dp"
+                    android:text="Cost :- "
+                    android:textColor="#C6FF00"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/symptom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/textView14"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:ems="10"
+                    android:inputType="textCapWords"
+                    android:textColor="#18FFFF" />
+
+                <EditText
+                    android:id="@+id/medicine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:ems="10"
+                    android:inputType="textCapWords"
+                    android:textColor="#18FFFF" />
+
+                <EditText
+                    android:id="@+id/cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/textView15"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textColor="#18FFFF" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+<android.support.design.widget.FloatingActionButton
+android:id="@+id/save_button"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+android:layout_alignParentEnd="true"
+android:layout_alignParentRight="true"
+android:layout_marginBottom="20dp"
+android:layout_marginEnd="20dp"
+android:layout_marginRight="20dp"
+android:clickable="true"
+app:srcCompat="@drawable/ic_check_black_24dp" />
+
+</RelativeLayout>
